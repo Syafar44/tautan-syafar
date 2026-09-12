@@ -1,0 +1,16 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html", "x": 0, "y": 0, "w": 390, "h": 844, "title": "Mobile — syafar.dev" },
+    { "file": "Desktop.dc.html", "x": 490, "y": 0, "w": 1440, "h": 900, "title": "Desktop — syafar.dev" }
+  ],
+  "annotations": [
+    {
+      "id": "notes-placeholder",
+      "x": 0,
+      "y": -150,
+      "w": 390,
+      "text": "Foto profil dan cover masih placeholder.\nGanti dengan foto asli lewat /public di project Next.js."
+    }
+  ],
+  "launch": { "view": "canvas" }
+}

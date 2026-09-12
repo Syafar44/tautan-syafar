@@ -1,0 +1,1 @@
+saya ingin membuat halaman interaktif seperti link tree untuk diri saya sendiri, untuk sosial media saya pribadi contoh tampilan yang saya harapkan ada seprti pada gamabr yang saya berikan, bangun webnya dengan sederhana saja

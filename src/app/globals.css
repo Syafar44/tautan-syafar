@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  /* Palet gradient — ubah tiga nilai ini untuk mengganti tema warna. */
+  --color-brand-top: #1f3fa6;
+  --color-brand-mid: #1479c9;
+  --color-brand-bottom: #2aa6dd;
+
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-script: var(--font-caveat), ui-serif, cursive;
+}
+
+:root {
+  /* Warna permukaan kartu dan teks di atasnya. */
+  --card: #cfe7fa;
+  --card-ink: #10345c;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  min-height: 100dvh;
+  background: linear-gradient(
+    180deg,
+    var(--color-brand-top) 0%,
+    var(--color-brand-mid) 46%,
+    var(--color-brand-bottom) 100%
+  );
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
