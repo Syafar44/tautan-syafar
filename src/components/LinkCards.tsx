@@ -117,13 +117,15 @@ function CompactCard({ item }: { item: CompactLink }) {
 export function LinkCards({ items }: { items: LinkItem[] }) {
   return (
     <div className="flex flex-col gap-3.5">
-      {items.map((item) => {
-        const key = item.type + item.href + item.title;
+      {items
+        .filter((item) => !item.hidden)
+        .map((item) => {
+          const key = item.type + item.href + item.title;
 
-        if (item.type === "banner") return <BannerCard key={key} item={item} />;
-        if (item.type === "featured") return <FeaturedCard key={key} item={item} />;
-        return <CompactCard key={key} item={item} />;
-      })}
+          if (item.type === "banner") return <BannerCard key={key} item={item} />;
+          if (item.type === "featured") return <FeaturedCard key={key} item={item} />;
+          return <CompactCard key={key} item={item} />;
+        })}
     </div>
   );
 }

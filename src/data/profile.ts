@@ -49,7 +49,10 @@ export type CompactLink = {
   icon?: SocialId;
 };
 
-export type LinkItem = BannerLink | FeaturedLink | CompactLink;
+export type LinkItem = (BannerLink | FeaturedLink | CompactLink) & {
+  /** Isi `true` untuk menyembunyikan kartu tanpa menghapus datanya. */
+  hidden?: boolean;
+};
 
 export const profile = {
   /** Nama yang tampil besar di bawah foto. */
@@ -95,6 +98,13 @@ export const links: LinkItem[] = [
     href: "https://googlestudentambassador.id/?referralCode=KpkyDqA",
     image: "/P29GU6bUvi5ZzRaTWA2HGUQdI.avif",
     imageAlt: "Google Student Ambassador",
+    hidden: true,
+  },
+  {
+    type: "featured",
+    title: "Gabung Grup WhatsApp — Workshop AI Gemini",
+    href: "https://chat.whatsapp.com/FdjftvoncbbA5Xk0VGxzUy",
+    image: "/group wa.jpeg",
   },
   {
     type: "featured",
